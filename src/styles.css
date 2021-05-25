@@ -1,0 +1,77 @@
+.app {
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.quiz-title {
+  font-size: 24px;
+}
+
+.quiz-question {
+  font-size: 20px;
+}
+
+.choicesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  font-size: 20px;
+  padding-right: 40px;
+}
+
+.correct-answer {
+  border: 1px solid green;
+}
+
+.incorrect-answer {
+  border: 1px solid red;
+  text-decoration: line-through;
+}
+
+button {
+  border: 1px solid black;
+  background-color: white;
+  padding: 20px 30px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+li {
+  list-style-position: inside;
+  margin: 4px 0px;
+  padding: 4px;
+  font-family: monospace;
+}
+
+li::marker {
+  font-weight: bold;
+}
+
+li,
+span,
+button {
+  cursor: pointer;
+}
+
+.score {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .quiz-title {
+    font-size: 20px;
+  }
+
+  .quiz-question {
+    font-size: 16px;
+  }
+
+  .choicesContainer {
+    font-size: 16px;
+    margin: 0px;
+  }
+}
